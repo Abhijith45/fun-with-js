@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box-container">
+        <div class="header-container">
+            <div class="dateSet"></div>
+            <div class="timeSet"></div>
+        </div>
+        <div class="main-container">
+            <div class="search-container">
+                <input type="text" name="inp" id="inp-city">
+                <button type="submit" id="inp-submit">
+                    <img src="./images/search-icon.png" id="sbt-logo" alt="search-logo">
+                </button>
+            </div>
+            <div class="temp-container">
+                <span id="temp-value"></span><span style="font-size: 2rem;">&#x2103;</span>
+            </div>
+            <div class="info-container">
+                <div><span class="city-name"></span>, <span id="country"></span></div>
+                <div class="feels-box">
+                    <span>Feels like </span>
+                    <span><span id="feels-like"></span> <span>&#x2103;</span></span>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-col">
+                        <div class="row">
+                            <div class="col1">Min Temp</div>
+                            <div class="col2"><span id="min-temp"></span> <span>&#x2103;</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Pressure</div>
+                            <div class="col2"><span id="pressure"></span> <span>Pa</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Wind Speed</div>
+                            <div class="col2"><sapn id="wind-speed"></sapn> <sapn>Km/H</sapn></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Sunrise</div>
+                            <div class="col2" id="sunrise"></div>
+                        </div>
+                    </div>
+                    <div class="info-box-col">
+                        <div class="row">
+                            <div class="col1">Max Temp</div>
+                            <div class="col2"><span id="max-temp"></span> <span>&#x2103;</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Humidity</div>
+                            <div class="col2"><span id="humidity"></span> <span>%</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Wind Direction</div>
+                            <div class="col2" id="wind-direction"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Sunset</div>
+                            <div class="col2" id="sunset"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="location">
+                <span id="u-city"></span>
+                <span id="u-country"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

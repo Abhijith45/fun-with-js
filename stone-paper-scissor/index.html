@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-paper-scissor-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stone Paper Scissors</h1>
+    <div class="mainBox">
+        <div class="counter">
+            <label for="counter">Number of turns</label>
+            <select name="counter" id="counter"></select>
+        </div>
+        <div class="choices">
+            <button class="choice" id="rock" title="Rock">👊🏻</button>
+            <button class="choice" id="paper" title="Paper">🖐🏻</button>
+            <button class="choice" id="scissor" title="Scissors">✌🏻</button>
+        </div>
+        <div class="score">
+            <div class="score1">
+                <span id="user-score">0</span>
+                <span>User</span>
+            </div>
+            <div class="score2">
+                <span id="comp-score">0</span>
+                <span>Computer</span>
+            </div>
+        </div>
+
+        <div class="msg-container">
+            Play Your turn
+        </div>
+        <div class="again">Game over. Click here play again.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

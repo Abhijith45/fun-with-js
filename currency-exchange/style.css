@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: cadetblue;
+    border: 2px solid;
+    width: 25rem;
+    height: 30rem;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+form h1{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+.inp-box,.result-box{
+    width: 100%;
+}
+.inp-box input,.result-box input{
+    width: 100%;
+    padding: .6rem 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+.select-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+}
+.from-select,.to-select{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.from-select label,.to-select label{
+    width: 2.5rem;
+    font-size: .95rem;
+}
+.from-select img,.to-select img{
+    height: 64px;
+}
+.from-select select,
+.to-select select{
+    width: 10rem;
+    padding: .125rem .25rem;
+    border: 0;
+    outline: 0;
+}
+.msg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: .125rem;
+}
+form button{
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    margin-top: .5rem;
+    outline: none;
+    border: none;
+    background-color: rgb(44, 44, 213);
+    color: #fff;
+    cursor: pointer;
+    animation-duration: 400ms;
+}
+form button:hover{
+    background-color: rgb(17, 17, 214);
+}

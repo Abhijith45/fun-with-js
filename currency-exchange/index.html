@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <form>
+        <h1>Currency Exchange</h1>
+        <div class="inp-box">
+            <input type="text" name="amount" id="amount" placeholder="enter amount" autofocus>
+        </div>
+        <div class="select-box">
+            <div class="from-select">
+                <label for="from">From</label>
+                <img src="https://flagsapi.com/US/flat/64.png" alt="img">
+                <select name="from" id="from" class="selectionList">
+                </select>
+            </div>
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <div class="to-select">
+                <label for="to">To</label>
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="img">
+                <select name="to" id="to" class="selectionList">
+                </select>
+            </div>
+        </div>
+        <div class="msg">
+            1<span class="from-curr"></span>=<span class="to-value"></span><span class="to-curr">INR</span>
+        </div>
+        <div class="result-box">
+            <input type="text" id="result-box" readonly>
+        </div>
+        <button>exchange</button>
+    </form>
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
